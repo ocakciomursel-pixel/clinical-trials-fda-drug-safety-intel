@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "lucacelli-clinical-trials-fda-drug-safety-intel": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server",
+        "--actors",
+        "lucacelli/clinical-trials-fda-drug-safety-intel"
+      ],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN_HERE"
+      }
+    }
+  }
+}
