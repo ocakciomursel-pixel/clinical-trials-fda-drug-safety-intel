@@ -1,0 +1,20 @@
+{
+  "platform": "Clay.com HTTP API Enrichment Column",
+  "actorTitle": "ClinicalTrials.gov & OpenFDA Biotech / Pharma Lead Enricher",
+  "actorStoreUrl": "https://apify.com/lucacelli/clinical-trials-fda-drug-safety-intel",
+  "costComparison": "$0.0008 per trial ($0.80/1k) vs. $0.10–$0.50 per row in native Clay credits (98% savings)",
+  "httpApiConfiguration": {
+    "method": "POST",
+    "endpoint": "https://api.apify.com/v2/acts/lucacelli~clinical-trials-fda-drug-safety-intel/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyTemplate": {
+      "conditions": [
+        "oncology",
+        "diabetes"
+      ],
+      "maxTrials": 50
+    }
+  }
+}
