@@ -1,12 +1,12 @@
 {
   "mcpServers": {
-    "lucacelli-clinical-trials-fda-drug-safety-intel": {
+    "lucacelli-b2b-cloud-suite": {
       "command": "npx",
       "args": [
         "-y",
         "@apify/actors-mcp-server",
         "--actors",
-        "lucacelli/clinical-trials-fda-drug-safety-intel"
+        "lucacelli/clinical-trials-fda-drug-safety-intel,lucacelli/google-maps-scraper-places-emails-contacts-reviews,lucacelli/b2b-domain-contact-tech-enricher,lucacelli/shopify-store-product-contact-spy,lucacelli/ai-ready-website-to-markdown-rag-crawler"
       ],
       "env": {
         "APIFY_TOKEN": "YOUR_APIFY_TOKEN_HERE"
